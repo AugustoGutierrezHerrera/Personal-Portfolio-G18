@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import { BASE_URL } from "../../../services/config";
-
 
 export default function Experience() {
   const [experienceData, setExperienceData] = useState({});
 
   const fetchDataExperience = async () => {
     try {
-      const response = await fetch(`${BASE_URL}experience`, {
+      const response = await fetch("https://personal-portfolio-g18.onrender.com/api/v1/experience", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

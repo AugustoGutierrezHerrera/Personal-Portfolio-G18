@@ -8,7 +8,7 @@ export default function Capabilities(props) {
 
   const fetchDataSkill = async () => {
     try {
-      const response = await fetch(`${BASE_URL}skills`, {
+      const response = await fetch("https://personal-portfolio-g18.onrender.com/api/v1/skills", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -1,7 +1,6 @@
 import { Footer } from "../../components";
 import { AboutMe, Capabilities, Experience } from "../../components/About";
 import { useState, useEffect } from "react";
-import { BASE_URL } from "../../services/config.js";
 
 
 import linkedin from "../../assets/presentation/linkedin.svg";
@@ -19,7 +18,7 @@ export default function AboutPage() {
 
   const fetchDataUser = async () => {
     try {
-      const response = await fetch(`${BASE_URL}usersdata`, {
+      const response = await fetch("https://personal-portfolio-g18.onrender.com/api/v1/usersdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
