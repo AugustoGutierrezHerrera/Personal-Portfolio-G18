@@ -140,8 +140,8 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # tu frontend local
-    # 'https://tu-dominio.com',  # tu dominio en producción
+    # 'http://localhost:5173',  # tu frontend local
+    'https://personal-portfolio-g18.onrender.com',  # tu dominio en producción
     # otros orígenes permitidos
 ]
 
