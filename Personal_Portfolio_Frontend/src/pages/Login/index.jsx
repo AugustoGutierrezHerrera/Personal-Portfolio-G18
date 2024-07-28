@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { signIn } from "../../services/auth";
 import { TextField } from "../../components";
 import { Link } from "react-router-dom";
+import { BASE_URL } from "../../services/config.js";
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export default function LoginPage() {
     const dateEnviada = { email, password };
 
     try {
-      const response = await fetch("https://personal-portfolio-g18.onrender.com/api/v1/login", {
+      const response = await fetch(`${BASE_URL}login`, {
         method: "POST",
         body: JSON.stringify(dateEnviada),
         headers: { "Content-Type": "application/json" },

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../../../services/config";
+
 
 export default function Capabilities(props) {
 
@@ -6,7 +8,7 @@ export default function Capabilities(props) {
 
   const fetchDataSkill = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/skills", {
+      const response = await fetch(`${BASE_URL}skills`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

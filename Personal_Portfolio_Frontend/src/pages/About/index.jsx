@@ -1,6 +1,7 @@
 import { Footer } from "../../components";
 import { AboutMe, Capabilities, Experience } from "../../components/About";
 import { useState, useEffect } from "react";
+import { BASE_URL } from "../../services/config.js";
 
 
 import linkedin from "../../assets/presentation/linkedin.svg";
@@ -18,7 +19,7 @@ export default function AboutPage() {
 
   const fetchDataUser = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/usersdata", {
+      const response = await fetch(`${BASE_URL}usersdata`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

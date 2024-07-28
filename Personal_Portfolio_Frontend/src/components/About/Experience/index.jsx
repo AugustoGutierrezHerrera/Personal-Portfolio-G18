@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../../../services/config";
+
 
 export default function Experience() {
   const [experienceData, setExperienceData] = useState({});
 
   const fetchDataExperience = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/experience", {
+      const response = await fetch(`${BASE_URL}experience`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

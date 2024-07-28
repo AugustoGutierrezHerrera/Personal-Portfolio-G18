@@ -4,6 +4,7 @@ import { AboutMe } from "../../components/About/index.js";
 import { Link } from "react-router-dom";
 
 import { fetchProjects } from "../../services/projectService.js";
+import { BASE_URL } from "../../services/config.js";
 
 export default function Home() {
   const [userData, setUserData] = useState({});
@@ -12,7 +13,7 @@ export default function Home() {
 
   const fetchDataUser = async () => {
     try {
-      const response = await fetch("https://personal-portfolio-g18.onrender.com/api/v1/usersdata", {
+      const response = await fetch(`${BASE_URL}usersdata`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
