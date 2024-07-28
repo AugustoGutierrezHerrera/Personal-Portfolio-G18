@@ -281,7 +281,13 @@ export default function ProyectForm(props) {
                 {sortedProjects.map((doc, index) => (
                   <tr key={index}>
                     <td className="py-2 px-4 whitespace-nowrap">{doc.id}</td>
-                    <td className="py-2 px-4 whitespace-nowrap">{doc.title}</td>
+                    <td className="py-2 px-4 whitespace-nowrap">
+                      
+                      {doc.title.length > 15
+                        ? `${doc.title.substring(0, 15)}...`
+                        : doc.title}
+                      
+                      </td>
                     <td className="py-2 px-4 ">
                       {/* Reduce el tamaño del texto */}
                       {doc.description.length > 50

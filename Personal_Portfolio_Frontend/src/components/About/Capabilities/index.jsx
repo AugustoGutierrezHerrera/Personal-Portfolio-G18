@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { BASE_URL } from "../../../services/config";
 
 
 export default function Capabilities(props) {

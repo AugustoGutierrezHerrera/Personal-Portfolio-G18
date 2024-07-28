@@ -1,8 +1,6 @@
 import { Footer } from "../../components";
 import { AboutMe, Capabilities, Experience } from "../../components/About";
 import { useState, useEffect } from "react";
-
-
 import linkedin from "../../assets/presentation/linkedin.svg";
 import githab from "../../assets/presentation/githab.svg";
 
