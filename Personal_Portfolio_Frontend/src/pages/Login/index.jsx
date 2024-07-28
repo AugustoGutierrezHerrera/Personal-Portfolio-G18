@@ -17,7 +17,7 @@ export default function LoginPage() {
     const dateEnviada = { email, password };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/login", {
+      const response = await fetch("https://personal-portfolio-g18.onrender.com/api/v1/login", {
         method: "POST",
         body: JSON.stringify(dateEnviada),
         headers: { "Content-Type": "application/json" },
