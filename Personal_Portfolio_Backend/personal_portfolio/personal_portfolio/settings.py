@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -143,3 +144,5 @@ CORS_ALLOWED_ORIGINS = [
     # 'https://tu-dominio.com',  # tu dominio en producción
     # otros orígenes permitidos
 ]
+
+STATIC_ROOT = BASE_DIR / 'staticos'
