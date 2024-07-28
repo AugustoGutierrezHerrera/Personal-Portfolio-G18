@@ -80,8 +80,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'personal_portfolio',
         'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',  # localhost
+        'PASSWORD': 'H=D*/O3)fUDA&v}q',
+        'HOST': '34.70.110.212',  # localhost
         'PORT': '5432'
     }
 }
