@@ -41,7 +41,7 @@ export default function Experience() {
       {experience && (
         <div className="w-10/12">
           {experience.map((doc, index) => (
-              <div key={index} className="pb-10">
+              <div key={index} className="pb-12">
                 <div className="flex justify-between items-center ">
                   <div>
                     <h4 className="text-white font-manrope text-2xl">
@@ -60,12 +60,12 @@ export default function Experience() {
                   </p>
                 </div>
 
-                <div className="flex justify-between items-center">
+                <div className="flex  items-center">
                   <div>
                     <p className="text-white font-manrope text-lg">Empresa: </p>
                   </div>
                   <div>
-                    <p className="text-custom-C7C7C7 font-manrope text-lg pl-1">
+                    <p className="text-custom-C7C7C7 font-manrope text-base pl-1">
                     {doc.company}
                     </p>
                   </div>
